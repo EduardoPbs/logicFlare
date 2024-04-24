@@ -1,9 +1,9 @@
+import { Flame } from 'lucide-react';
 import { About } from './about';
 import { Contact } from './contact';
 import { Services } from './services';
 import { MutableRefObject } from 'react';
 import background from '../../assets/templates/macbook_iphone.jpg';
-import { Rocket } from 'lucide-react';
 
 interface IContentProps {
     aboutRef: MutableRefObject<null> | any;
@@ -29,9 +29,9 @@ export function Content(props: IContentProps) {
                             Transformamos processos, criamos possibilidades, e impulsionamos seu negócio através da tecnologia.
                             Se deseja sonhar alto, impulsionar sua empresa ou agilizar processos, você encontrou o lugar certo!
                         </p>
-                        <span className='flex flex-col sm:flex-row items-center justify-center gap-2 text-sm normal-case text-main-color'>
+                        <span className='flex flex-col sm:flex-row items-center justify-center gap-1 text-sm normal-case text-main-color'>
                             Onde inovação não é apenas o que fazemos, é o que vivemos.
-                            <Rocket color='#f59e0b' fill='#f59e0b' />
+                            <Flame className='stroke-[1.5px]' color='#f59e0b' width={16} height={16} />
                         </span>
                     </div>
                 </div>

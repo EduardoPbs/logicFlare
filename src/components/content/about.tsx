@@ -18,7 +18,7 @@ export function About(props: IAboutProps) {
                 <div className='flex flex-col gap-12 justify-center items-center text-xl px-4 mx-auto max-w-full text-wrap text-justify'>
                     <div className='flex flex-col sm:flex-row max-w-full items-center sm:items-start gap-12 justify-center md:w-[705px]'>
                         <p className='w-full md:max-w-[475px]'>
-                            Como uma empresa de desenvolvimento de software, a {' '}
+                            Como uma empresa de desenvolvimento de sistemas e sites, a {' '}
                             <span className='text-main-color'>LogicFlare</span> ajuda
                             empresas estabelecidas a construir sites/landingPages de sucesso que os usuários adotam. Nossa força reside em
                             nossa equipe dedicada e dinâmica de mentes visionárias que se destacam em tecnologias Web.

@@ -17,7 +17,7 @@ export function Services(props: IServiceProps) {
         },
         {
             title: 'Criação de sites',
-            description: 'A união de um design intuitivo com uma arquitetura de informação bem estruturada proporciona uma experiência de usuário excepcional',
+            description: 'A união de um design intuitivo com uma arquitetura de informação bem estruturada proporciona uma experiência de usuário excepcional.',
             icon: LayoutTemplate
         },
         {
