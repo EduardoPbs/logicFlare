@@ -3,6 +3,7 @@ import { Contact } from './contact';
 import { Services } from './services';
 import { MutableRefObject } from 'react';
 import background from '../../assets/templates/macbook_iphone.jpg';
+import { Rocket } from 'lucide-react';
 
 interface IContentProps {
     aboutRef: MutableRefObject<null> | any;
@@ -21,12 +22,17 @@ export function Content(props: IContentProps) {
             <div className="mx-auto w-full max-w-screen-xl">
                 <div className='text-main-white capitalize text-wrap'>
                     <div className='sm:absolute m-auto left-0 top-64 right-0 flex flex-col justify-center items-start gap-2 max-w-[555px] sm:bg-main-black/80 sm:border-2 sm:border-main-black sm:shadow-md sm:shadow-main-black px-6 py-8 sm:py-6 sm:rounded-lg'>
-                        <h1 className='text-2xl font-bold border-b-2 text-start text-main-color'>Sites Profissionais</h1>
-                        <p className='font-semibold normal-case text-justify text-main-white'>
-                            Bem-vindo à nossa agência especializada em criação de sites em <br /> WordPress.
-                            Se você deseja impulsionar sua presença online e conquistar mais clientes,
-                            você veio ao lugar certo!
+                        <h1 className='text-2xl normal-case font-bold border-b-2 text-start text-main-color'>
+                            Bem-vindo à LogicFlare!
+                        </h1>
+                        <p className='font-semibold normal-case text-lg text-justify text-main-white'>
+                            Transformamos processos, criamos possibilidades, e impulsionamos seu negócio através da tecnologia.
+                            Se deseja sonhar alto, impulsionar sua empresa ou agilizar processos, você encontrou o lugar certo!
                         </p>
+                        <span className='flex flex-col sm:flex-row items-center justify-center gap-2 text-sm normal-case text-main-color'>
+                            Onde inovação não é apenas o que fazemos, é o que vivemos.
+                            <Rocket color='#f59e0b' fill='#f59e0b' />
+                        </span>
                     </div>
                 </div>
             </div>
