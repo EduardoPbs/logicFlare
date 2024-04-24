@@ -1,6 +1,9 @@
 export function FlareLogo() {
     return (
-        <div className='flex flex-col items-start text-main-black dark:text-main-white select-none cursor-pointer'>
+        <div
+            className='flex flex-col items-start text-main-black dark:text-main-white select-none cursor-pointer'
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
             <h1 className='text-[36px] sm:leading-[36px] font-bold font-spartan'>
                 <span className='-tracking-[4.5px]'>lo</span>
                 <span className='-tracking-[3.4px]'>gic</span>
