@@ -1,6 +1,6 @@
 import { Card } from "../card";
 import { MutableRefObject } from "react";
-import { Component, LayoutTemplate, Zap } from "lucide-react";
+import { Component, LayoutTemplate, Smartphone } from "lucide-react";
 import { contentLayoutStylePrim, contentTitleStylePri } from "../../constants/styles";
 
 interface IServiceProps {
@@ -12,18 +12,18 @@ export function Services(props: IServiceProps) {
     const infoCards = [
         {
             title: 'Landing pages',
-            description: 'Com design atrativo e foco na conversão, suas campanhas serão impulsionadas com landing pages otimizadas para capturar leads e gerar resultados.',
+            description: 'Maximize o impacto das campanhas com landing pages otimizadas. Com design atraente e foco na conversão, capture leads e impulsione resultados.',
             icon: Component
         },
         {
             title: 'Criação de sites',
-            description: 'Com design atrativo e foco na conversão, suas campanhas serão impulsionadas com landing pages otimizadas para capturar leads e gerar resultados.',
+            description: 'A união de um design intuitivo com uma arquitetura de informação bem estruturada proporciona uma experiência de usuário excepcional',
             icon: LayoutTemplate
         },
         {
-            title: 'Desempenho',
-            description: 'Com design atrativo e foco na conversão, suas campanhas serão impulsionadas com landing pages otimizadas para capturar leads e gerar resultados.',
-            icon: Zap
+            title: 'Aplicativo',
+            description: 'Com interfaces otimizadas para telas menores e funcionalidades adaptadas para interações touch, a experiência do usuário em dispositivos móveis é transformada.',
+            icon: Smartphone
         },
     ];
 
