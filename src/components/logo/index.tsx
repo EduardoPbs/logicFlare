@@ -15,7 +15,7 @@ export function FlareLogo() {
                 </span>
                 <span className='text-main-color'>e</span>
             </h1>
-            <p className='hidden text-main-black dark:text-main-white sm:flex text-[8px] font-medium tracking-[3px] indent-[40.5px] font-sand -mt-[10px]'>
+            <p className='hidden text-main-black dark:text-main-white sm:flex text-[8px] font-medium tracking-[3px] indent-[40.5px] font-montserrat -mt-[10px]'>
                 TECHNOLOGY
             </p>
         </div>

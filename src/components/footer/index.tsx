@@ -24,7 +24,7 @@ export function MyFooter() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contato</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline text-sm sm:text-base">
+                                    <a href="#" className="break-all sm:break-normal hover:underline text-sm sm:text-base">
                                         logicflare3@gmail.com</a>
                                 </li>
                                 <li className="mb-4">

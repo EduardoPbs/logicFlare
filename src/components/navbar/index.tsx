@@ -1,6 +1,14 @@
+<<<<<<< Updated upstream
 import { MutableRefObject } from "react";
 import { FlareLogo } from "../logo";
 import { MyDrawer } from "../drawer";
+=======
+import { MyDrawer } from "../drawer";
+import { FlareLogo } from "../logo";
+import { scrollWindow } from "../../utils/scrollWindow";
+import { MutableRefObject } from "react";
+import { ArrowUpRightFromSquare } from "lucide-react";
+>>>>>>> Stashed changes
 
 export interface IMyNavbarProps {
     aboutRef: MutableRefObject<null> | any;
@@ -10,10 +18,6 @@ export interface IMyNavbarProps {
 
 export function MyNavbar(props: IMyNavbarProps) {
     const { aboutRef, serviceRef, contactRef } = props;
-
-    function scrollWindow(ref: any): void {
-        ref.current.scrollIntoView({ behavior: 'smooth' });
-    }
 
     return (
         <nav className="sticky top-0 bg-white  border-b-2 border-main-color dark:bg-gray-900 select-none shadow-lg z-50">
@@ -40,6 +44,13 @@ export function MyNavbar(props: IMyNavbarProps) {
                         <li ref={contactRef} onClick={() => scrollWindow(contactRef)}>
                             <p className="cursor-pointer duration-150 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main-color md:p-0 dark:text-white md:dark:hover:text-main-color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                                 Contato
+                            </p>
+                        </li>
+                        <li>
+                            <p className="cursor-pointer duration-150 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main-color md:p-0 dark:text-white md:dark:hover:text-main-color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                <span className='flex items-center gap-1'>
+                                    Plataforma <ArrowUpRightFromSquare width={16} height={16} />
+                                </span>
                             </p>
                         </li>
                     </ul>

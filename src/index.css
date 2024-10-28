@@ -4,7 +4,7 @@
 
 @layer base {
     @font-face {
-        font-family: 'League Spartan';
+        font-family: 'Montserrat';
         src: url(/fonts/league-spartan.woff2) format('woff2');
     }
 }

@@ -16,7 +16,7 @@ export default {
             },
             fontFamily: {
                 spartan: ['League Spartan', 'sans-serif'],
-                sand: ['Quicksand', 'sans-serif'],
+                montserrat: ['Montserrat', 'sans-serif'],
             },
         },
     },

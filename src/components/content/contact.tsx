@@ -21,7 +21,7 @@ export function Contact(props: IContactProps) {
                     </h3>
                     <p className='flex flex-col items-center select-none'>
                         E-mail:
-                        <span className='font-bold text-3xl bg-main-color text-main-white px-1 py-1 rounded-md select-text'>
+                        <span className='break-all sm:break-normal font-bold text-3xl bg-main-color text-main-white px-1 py-1 rounded-md select-text'>
                             logicflare3@gmail.com
                         </span>
                     </p>
