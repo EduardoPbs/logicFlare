@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IMyNavbarProps } from '../navbar/index';
+import { ArrowUpRightFromSquare } from 'lucide-react';
 
 interface IDrawerProps extends IMyNavbarProps {
     onClick: (ref: any) => void;
@@ -43,16 +44,16 @@ export function MyDrawer(props: IDrawerProps) {
             </button>
             <div
                 id="drawer-right-example"
-                className={`md:hidden fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform bg-white w-80 border-l-2 border-main-color dark:bg-gray-900 ${isOpen ? '' : 'translate-x-full'}`}
+                className={`md:hidden fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform bg-main-dark text-main-white w-80 border-l-2 border-main-color dark:bg-gray-900 ${isOpen ? '' : 'translate-x-full'}`}
                 aria-labelledby="drawer-right-label"
                 onClick={toggleDrawer}
             >
-                <h5
+                {/* <h5
                     id="drawer-right-label"
-                    className="inline-flex items-center mb-4 text-3xl capitalize font-semibold text-main-color"
+                    className="inline-flex items-center mb-4 text-3xl capitalize text-main-color"
                 >
                     Menu
-                </h5>
+                </h5> */}
                 <button
                     type="button"
                     data-drawer-hide="drawer-right-example"
@@ -75,15 +76,15 @@ export function MyDrawer(props: IDrawerProps) {
                     </svg>
                     <span className="sr-only">Fechar menu</span>
                 </button>
-                <div className="w-full text-center md:w-auto" id="navbar-default">
+                <div className="w-full text-center md:w-auto mt-6" id="navbar-default">
                     <ul
-                        className="font-medium flex flex-col gap-6 p-4 text-xl border-gray-100 rounded-lg"
+                        className="font-medium flex flex-col gap-6 p-4 text-xl border-gray-100 text-main-white rounded-lg"
                         data-drawer-hide="drawer-right-example"
                         aria-controls="drawer-right-example"
                     >
                         <li>
                             <p
-                                className="cursor-pointer duration-150 block bg-white/5 py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-main-white dark:hover:bg-gray-700 dark:hover:text-white"
+                                className="cursor-pointer duration-150 block bg-white/5 py-2 px-3 text-main-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
                                 onClick={() => onClick(serviceRef)}
                             >
                                 Serviços
@@ -91,7 +92,7 @@ export function MyDrawer(props: IDrawerProps) {
                         </li>
                         <li>
                             <p
-                                className="cursor-pointer duration-150 block bg-white/5 py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-main-white dark:hover:bg-gray-700 dark:hover:text-white"
+                                className="cursor-pointer duration-150 block bg-white/5 py-2 px-3 text-main-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
                                 onClick={() => onClick(aboutRef)}
                             >
                                 Sobre
@@ -99,10 +100,18 @@ export function MyDrawer(props: IDrawerProps) {
                         </li>
                         <li>
                             <p
-                                className="cursor-pointer duration-150 block bg-white/5 py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-main-white dark:hover:bg-gray-700 dark:hover:text-white"
+                                className="cursor-pointer duration-150 block bg-white/5 py-2 px-3 text-main-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
                                 onClick={() => onClick(contactRef)}
                             >
                                 Contato
+                            </p>
+                        </li>
+                        <li>
+                            <p
+                                className="flex items-center justify-center gap-2 cursor-pointer duration-150 bg-white/5 py-2 px-3 text-main-white rounded hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                            >
+                                Plataforma
+                                <ArrowUpRightFromSquare className='size-5'/>
                             </p>
                         </li>
                     </ul>
