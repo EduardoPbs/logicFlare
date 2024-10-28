@@ -1,41 +1,42 @@
-import { MutableRefObject } from "react";
-import { contentLayoutStyleSec, contentTitleStyleSec } from "../../constants/styles";
 import background from '../../assets/logicflare_branco.png';
+import { Crown } from "lucide-react";
+import { SectionContainer } from "../sectionContainer";
+import { MutableRefObject } from "react";
 
 interface IAboutProps {
     aboutRef: MutableRefObject<null> | any;
 }
 
-export function About(props: IAboutProps) {
-    const { aboutRef } = props;
-
+export function About({ aboutRef }: IAboutProps) {
     return (
-        <div className={contentLayoutStyleSec} ref={aboutRef}>
-            <h2 className={contentTitleStyleSec}>
-                Sobre
-            </h2>
-            <div className="mx-auto w-full max-w-screen-xl">
-                <div className='flex flex-col gap-12 justify-center items-center text-xl px-4 mx-auto max-w-full text-wrap text-justify'>
-                    <div className='flex flex-col sm:flex-row max-w-full items-center sm:items-start gap-12 justify-center md:w-[705px]'>
-                        <p className='w-full md:max-w-[475px]'>
-                            Como uma empresa de desenvolvimento de sistemas e sites, a {' '}
-                            <span className='text-main-color'>LogicFlare</span> ajuda
-                            empresas estabelecidas a construir sites/landingPages de sucesso que os usuários adotam. Nossa força reside em
-                            nossa equipe dedicada e dinâmica de mentes visionárias que se destacam em tecnologias Web.
+        <SectionContainer title="SOBRE NÓS" dark>
+            <div className='flex flex-col px-4' ref={aboutRef}>
+                <p className='text-wrap text-2xl font-light pb-8 text-center sm:text-start'>
+                    Na LogicFlare, somos mais do que uma empresa de desenvolvimento de sistemas e sites; somos parceiros dedicados ao sucesso das empresas estabelecidas.
+                </p>
+                <div className='flex flex-col xl:flex-row items-center xl:items-start gap-10 '>
+                    <div className='lg:w-[544px]'>
+                        <p className='text-wrap text-2xl font-light text-center sm:text-start'>
+                            Nosso objetivo é nos integrar perfeitamente à sua equipe, personalizando cada projeto  para atender às suas necessidades específicas.
                         </p>
+                    </div>
+                    <div>
                         <div
-                            className='md:flex bg-cover bg-center min-w-[256px] w-[256px] max-w-[320px] min-h-[256px] h-[256px] max-h-[320px] shadow-gray-900 rounded-lg'
+                            className='relative z-10 md:flex bg-cover bg-center sm:min-w-[496px] w-[256px] max-w-[216px] min-h-[256px] h-[256px] max-h-[320px] shadow-gray-900 rounded-lg'
                             style={{
                                 backgroundImage: `url(${background})`
                             }}
                         />
+                        <Crown className='hidden md:block absolute -mt-[360px] ml-[334.5px] rotate-[20deg] stroke-[0.15px] opacity-45 text-main-color' height={250} width={250} />
                     </div>
-                    <p className='md:w-[705px]'>
-                        Nosso objetivo é fazer parte de sua equipe e ir até o fim para personalizar seu projeto de acordo com suas
-                        necessidades. Não se trata apenas de codificação para nós. É aqui que o seu negócio evolui para algo melhor.
-                    </p>
+                    <div className='lg:w-[544px]'>
+                        <p className='text-wrap text-2xl font-light text-center sm:text-start'>
+                            Especializados em criar sites e landing page que não só atendem, mas superam as expectativas. Nossa força está na nossa equipe dinâmica e criativa, que se destaca nas tecnologias web.
+
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </SectionContainer>
     );
 }

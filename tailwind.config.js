@@ -10,13 +10,15 @@ export default {
             colors: {
                 // 'main-color': '#3454D1',
                 'main-color': '#f59e0b',
+                'main-color-dark': '#D78C0D',
                 'main-white': '#F7F7FF',
+                'main-dark': '#111827',
                 'main-gray': '#EFEFEF',
                 'main-black': '#090809',
             },
             fontFamily: {
                 spartan: ['League Spartan', 'sans-serif'],
-                sand: ['Quicksand', 'sans-serif'],
+                montserrat: ['Montserrat', 'sans-serif'],
             },
         },
     },
