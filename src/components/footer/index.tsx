@@ -38,7 +38,7 @@ export function MyFooter() {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2023 <a href="#" className="hover:underline">Logic<span className='text-main-color '>Flare</span>™</a>. Todos direitos reservados.
+                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; 2023 <a href="#" className="hover:underline text-white">Logic<span className='text-main-color '>Flare</span>™</a>. Todos direitos reservados.
                     </span>
                 </div>
             </div>
