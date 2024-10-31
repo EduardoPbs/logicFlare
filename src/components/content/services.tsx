@@ -64,14 +64,14 @@ export function Services({ serviceRef }: IServiceProps) {
 function ServicesList({ title, data }: { title: string; data: string[]; }) {
     return (
         <div className='flex flex-col items-start justify-center'>
-            <h3 className='uppercase font-montserrat font-normal text-2xl mb-4 cursor-default'>
+            <h3 className='uppercase font-montserrat font-normal text-xl mb-4 cursor-default'>
                 {title}
             </h3>
             <ul className='flex flex-col items-start justify-center gap-3 w-fit'>
                 {data.map(((d: string, index: number) => (
                     <li key={index} className='flex items-center justify-start gap-2'>
                         <ChevronRight className="size-[24px]" />
-                        <p className='capitalize font-light text-xl'>{d}.</p>
+                        <p className='font-light text-lg'>{d}.</p>
                     </li>
                 )))}
             </ul>

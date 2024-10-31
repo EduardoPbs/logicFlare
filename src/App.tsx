@@ -9,7 +9,7 @@ function App() {
     const contactRef = useRef(null);
 
     return (
-        <main className='font-montserrat selection:bg-amber-500 selection:text-main-white bg-[#F0F]'>
+        <main className='font-montserrat selection:bg-amber-500 selection:text-main-white'>
             <MyNavbar
                 aboutRef={aboutRef}
                 serviceRef={serviceRef}
