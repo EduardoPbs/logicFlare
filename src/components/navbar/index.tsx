@@ -43,7 +43,7 @@ export function MyNavbar(props: IMyNavbarProps) {
                         <li>
                             <p
                                 className="cursor-pointer duration-150 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-main-color md:p-0 dark:text-white md:dark:hover:text-main-color dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                                onClick={() => alert('Redirect')}
+                                onClick={() => alert('Indisponível')}
                             >
                                 <span className='flex items-center gap-1'>
                                     Plataforma <ArrowUpRightFromSquare width={16} height={16} />
